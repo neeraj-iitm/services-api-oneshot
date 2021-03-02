@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const College = require("../models/College");
 const service=require("../services/college");
 router.get("/", service.getAll);
 router.get("/:id", service.getById);
